@@ -1,5 +1,46 @@
 # extended-firefox-bookmarks-toolbar
 
+## English
+
+Displays Firefox personal toolbar bookmarks on **2 or more lines**.
+
+### Content
+
+- `chrome/userChrome.css`: style file to copy into your Firefox profile.
+
+### Installation
+
+1. Open `about:config` in Firefox.
+2. Set `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`.
+3. Open your profile folder (`about:profiles` → "Root Directory" → "Open Folder").
+4. Create a `chrome` folder if it does not exist.
+5. Copy `chrome/userChrome.css` from this repository into that folder.
+6. Restart Firefox.
+
+### Configure the number of lines
+
+In `userChrome.css`, edit:
+
+```css
+--bookmarks-toolbar-lines: 2;
+```
+
+Examples:
+
+- `2` for 2 lines
+- `3` for 3 lines
+- `4` for 4 lines
+
+If needed, also adjust the item height:
+
+```css
+--bookmarks-toolbar-item-height: 30px;
+```
+
+---
+
+## Français
+
 Permet d'afficher les favoris de la barre personnelle Firefox sur **2 lignes ou plus**.
 
 ## Contenu
