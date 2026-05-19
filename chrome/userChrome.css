@@ -1,0 +1,21 @@
+:root {
+  --bookmarks-toolbar-lines: 2;
+  --bookmarks-toolbar-item-height: 30px;
+}
+
+#PersonalToolbar {
+  min-height: calc(var(--bookmarks-toolbar-item-height) * var(--bookmarks-toolbar-lines)) !important;
+  max-height: calc(var(--bookmarks-toolbar-item-height) * var(--bookmarks-toolbar-lines)) !important;
+}
+
+#PlacesToolbarItems {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-content: flex-start !important;
+  overflow-y: auto !important;
+  max-height: calc(var(--bookmarks-toolbar-item-height) * var(--bookmarks-toolbar-lines)) !important;
+}
+
+#PlacesToolbarItems > .bookmark-item {
+  height: var(--bookmarks-toolbar-item-height) !important;
+}
