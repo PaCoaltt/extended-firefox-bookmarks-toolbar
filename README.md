@@ -1,4 +1,4 @@
-# extendend-firefox-bookmarks-toolbar
+# extended-firefox-bookmarks-toolbar
 
 Permet d'afficher les favoris de la barre personnelle Firefox sur **2 lignes ou plus**.
 
